@@ -1,0 +1,699 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dhiranesh K M - Software Developer</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary-color: #0d6efd;
+        --secondary-color: #6c757d;
+        --bg-light: #f8f9fa;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+      }
+
+      .navbar {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .hero-section {
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        padding-top: 60px;
+      }
+
+      .section-padding {
+        padding: 80px 0;
+      }
+
+      .about-text {
+        font-size: 1.1rem;
+      }
+
+      .skill-badge {
+        font-size: 0.9rem;
+        margin: 5px;
+        padding: 8px 15px;
+        border-radius: 20px;
+        border: 1px solid #dee2e6;
+        display: inline-block;
+        transition: all 0.3s ease;
+      }
+
+      .skill-badge:hover {
+        background-color: var(--primary-color);
+        color: white;
+        border-color: var(--primary-color);
+        transform: translateY(-2px);
+      }
+
+      .project-card {
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
+        height: 100%;
+        border: none;
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+      }
+
+      .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .contact-icon {
+        font-size: 1.5rem;
+        color: var(--primary-color);
+        margin-right: 10px;
+      }
+
+      footer {
+        background-color: #343a40;
+        color: white;
+        padding: 30px 0;
+      }
+    </style>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#navbarNav">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-primary" href="#">DKM</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#internship">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#research">Research</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <h5 class="text-primary text-uppercase mb-3">Hello, I'm</h5>
+            <h1 class="display-3 fw-bold mb-3">Dhiranesh K M</h1>
+            <h3 class="h2 text-secondary mb-4">
+              AI & Data Science Engineer | Computer Vision Developer
+            </h3>
+            <p class="lead mb-4">
+              B.Tech Artificial Intelligence & Data Science student specializing
+              in real-time AI systems, edge-deployed LLMs, and scalable software
+              architecture.
+            </p>
+            <div class="d-flex gap-3">
+              <a href="#contact" class="btn btn-primary btn-lg px-4"
+                >Contact Me</a
+              >
+              <a
+                href="DHIRANESH_KM_resume altered 1 WITH PHOTO.pdf"
+                target="_blank"
+                class="btn btn-outline-dark btn-lg px-4"
+              >
+                <i class="fas fa-download me-2"></i>Download Resume
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-5 mt-5 mt-lg-0 text-center">
+            <!-- User photo -->
+            <div
+              class="rounded-circle bg-white shadow-lg d-inline-flex align-items-center justify-content-center"
+              style="width: 300px; height: 300px; overflow: hidden"
+            >
+              <img
+                src="ChatGPT Image Feb 10, 2026, 05_57_24 AM.png"
+                alt="Dhiranesh K M"
+                class="img-fluid"
+                style="width: 100%; height: 100%; object-fit: cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center mb-5">
+            <h6 class="text-primary text-uppercase">Who Am I?</h6>
+            <h2 class="fw-bold">About Me</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="card border-0 shadow-sm p-4">
+              <div class="card-body about-text text-center text-muted">
+                <p>
+                  I am a B.Tech student in Artificial Intelligence and Data
+                  Science at K. S. Rangasamy College of Technology (CGPA: 7.78).
+                  I specialize in building real-time AI systems, computer vision
+                  applications, and scalable full-stack platforms.
+                </p>
+
+                <p>
+                  My core focus areas include edge AI deployment, agentic AI
+                  systems, model optimization (quantization & PEFT), and
+                  high-performance algorithmic problem solving. I have hands-on
+                  experience developing production-ready AI solutions including
+                  cricket umpire action recognition and automated highlight
+                  generation systems.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section-padding bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h6 class="text-primary text-uppercase">Academic Background</h6>
+          <h2 class="fw-bold">Education</h2>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="card border-0 shadow-sm p-4">
+              <h4 class="fw-bold">
+                B.Tech – Artificial Intelligence & Data Science
+              </h4>
+              <p class="text-muted">
+                K. S. Rangasamy College of Technology | Sept 2023 – May 2027
+              </p>
+
+              <ul>
+                <li><strong>CGPA:</strong> 7.78 (Till 5th Semester)</li>
+                <li>
+                  <strong>Relevant Coursework:</strong> Machine Learning,
+                  Operating Systems, Computer Vision, Data Structures &
+                  Algorithms
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h6 class="text-primary text-uppercase">My Expertise</h6>
+          <h2 class="fw-bold">Technical Skills</h2>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <span class="skill-badge">Python</span>
+            <span class="skill-badge">Java</span>
+            <span class="skill-badge">C</span>
+            <span class="skill-badge">C++</span>
+            <span class="skill-badge">Data Structures & Algorithms</span>
+            <span class="skill-badge">TensorFlow</span>
+            <span class="skill-badge">PyTorch</span>
+            <span class="skill-badge">Computer Vision</span>
+            <span class="skill-badge">Pose Estimation</span>
+            <span class="skill-badge">LSTM</span>
+            <span class="skill-badge">LLM Optimization</span>
+            <span class="skill-badge">Quantization (4-bit)</span>
+            <span class="skill-badge">HTML5</span>
+            <span class="skill-badge">CSS3</span>
+            <span class="skill-badge">JavaScript</span>
+            <span class="skill-badge">Angular</span>
+            <span class="skill-badge">Git & GitHub</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="section-padding">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h6 class="text-primary text-uppercase">Advanced Work</h6>
+          <h2 class="fw-bold">
+            Research & Ongoing Development (Jan 2026 – Present)
+          </h2>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="card border-0 shadow-sm p-4">
+              <ul>
+                <li>
+                  Optimizing large language models for deployment on
+                  resource-constrained edge devices using quantization and
+                  parameter-efficient fine-tuning (PEFT).
+                </li>
+                <li>
+                  Developing a real-time adaptive video analysis agent capable
+                  of decision-making with minimal manual retraining.
+                </li>
+                <li>
+                  Designing a modular agentic AI framework integrating vision,
+                  memory, and reasoning components for autonomous edge
+                  applications.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section-padding bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h6 class="text-primary text-uppercase">Achievements</h6>
+          <h2 class="fw-bold">Certifications</h2>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="card border-0 shadow-sm p-4">
+              <ul>
+                <li>
+                  Linear Algebra for Machine Learning and Data Science –
+                  DeepLearning.AI
+                </li>
+                <li>Machine Learning for All – University of London</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coding Profiles Section -->
+    <section id="coding" class="section-padding">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h6 class="text-primary text-uppercase">Competitive Programming</h6>
+          <h2 class="fw-bold">Coding Profiles</h2>
+        </div>
+
+        <div class="row justify-content-center text-center">
+          <div class="col-md-4">
+            <a
+              href="https://leetcode.com/u/dhiranesh_km1/"
+              target="_blank"
+              class="text-decoration-none"
+            >
+              <div class="card border-0 shadow-sm p-4">
+                <i class="fas fa-code fa-2x text-primary mb-3"></i>
+                <h5>LeetCode</h5>
+                <p class="text-muted">DSA & Algorithmic Problem Solving</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4">
+            <a
+              href="YOUR_CODESTUDIO_LINK"
+              target="_blank"
+              class="text-decoration-none"
+            >
+              <div class="card border-0 shadow-sm p-4">
+                <i class="fas fa-laptop-code fa-2x text-primary mb-3"></i>
+                <h5>CodeStudio</h5>
+                <p class="text-muted">Structured DSA Practice</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4">
+            <a
+              href="https://github.com/dhiranesh"
+              target="_blank"
+              class="text-decoration-none"
+            >
+              <div class="card border-0 shadow-sm p-4">
+                <i class="fab fa-github fa-2x text-primary mb-3"></i>
+                <h5>GitHub</h5>
+                <p class="text-muted">Projects & Open Source Work</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Internship Section -->
+    <section id="internship" class="section-padding bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h6 class="text-primary text-uppercase">Experience</h6>
+          <h2 class="fw-bold">Internship</h2>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="card border-0 shadow-sm p-4">
+              <h5 class="fw-bold">Research & Development Intern</h5>
+              <p class="text-muted">iGrad AI Labs | Sep 2025 – Nov 2025</p>
+              <ul>
+                <li>
+                  Developed cricket umpire action recognition system using deep
+                  learning and pose estimation.
+                </li>
+                <li>
+                  Worked on real-time AI deployment and collaborative
+                  engineering workflows.
+                </li>
+                <li>Applied temporal modeling with LSTM for video analysis.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h6 class="text-primary text-uppercase">My Work</h6>
+          <h2 class="fw-bold">Research & Engineering Projects</h2>
+        </div>
+
+        <div class="row g-4">
+          <!-- Project 1 -->
+          <div class="col-md-6">
+            <div class="card project-card h-100">
+              <div class="card-body p-4">
+                <h4 class="fw-bold text-primary">
+                  Umpire Action Recognition & Highlight Generation System (ECN)
+                </h4>
+
+                <p class="text-muted">
+                  Built a real-time AI system capable of detecting cricket
+                  umpire actions (Out, Six, Four, Wide, No-ball, etc.) and
+                  automatically generating match highlights using computer
+                  vision and temporal modeling.
+                </p>
+
+                <ul>
+                  <li>
+                    Implemented pose estimation and object tracking for accurate
+                    action detection.
+                  </li>
+                  <li>
+                    Applied advanced LSTM-based temporal modeling for sequential
+                    video analysis.
+                  </li>
+                  <li>
+                    Reduced model size from
+                    <strong>1.2GB to 340MB</strong> using 4-bit quantization.
+                  </li>
+                  <li>Optimized for real-time inference on edge devices.</li>
+                  <li>
+                    Designed modular architecture for scalable deployment.
+                  </li>
+                </ul>
+
+                <p>
+                  <strong>Tech Stack:</strong> Python, TensorFlow, PyTorch,
+                  LSTM, Pose Estimation, Quantization, Edge AI
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="col-md-6">
+            <div class="card project-card h-100">
+              <div class="card-body p-4">
+                <h4 class="fw-bold text-primary">
+                  AI Research Assistant & Universal PDF Summarizer
+                </h4>
+
+                <p class="text-muted">
+                  Developed an AI-powered assistant capable of OCR-based
+                  document parsing, research summarization, and intelligent
+                  knowledge extraction from PDFs.
+                </p>
+
+                <ul>
+                  <li>
+                    Integrated OCR pipelines for scanned document processing.
+                  </li>
+                  <li>
+                    Built LLM-powered summarization and context extraction
+                    system.
+                  </li>
+                  <li>
+                    Implemented structured output generation for research
+                    workflows.
+                  </li>
+                  <li>
+                    Designed memory-based retrieval system for follow-up
+                    queries.
+                  </li>
+                </ul>
+                <p>
+                  <strong>Tech Stack:</strong> Python, LLMs, NLP, OCR, Vector
+                  Search
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="col-md-6">
+            <div class="card project-card h-100">
+              <div class="card-body p-4">
+                <h4 class="fw-bold text-primary">
+                  Tournament Management Web Application
+                </h4>
+
+                <p class="text-muted">
+                  Designed and developed a local-first cricket tournament
+                  platform supporting automated bracket progression and
+                  real-time synchronization.
+                </p>
+
+                <ul>
+                  <li>
+                    Admin control panel for teams, matches, points & logistics.
+                  </li>
+                  <li>Automated knockout bracket generation.</li>
+                  <li>
+                    Optional real-time sync for public scoreboard updates.
+                  </li>
+                  <li>Scalable architecture for multi-tournament support.</li>
+                </ul>
+
+                <p>
+                  <strong>Tech Stack:</strong> Angular, JavaScript, Web
+                  Architecture, Git
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="col-md-6">
+            <div class="card project-card h-100">
+              <div class="card-body p-4">
+                <h4 class="fw-bold text-primary">
+                  TeamSync Pro – Role-Based Collaboration Platform
+                </h4>
+
+                <p class="text-muted">
+                  Built a role-based team collaboration platform featuring
+                  dashboards, approvals, and real-time coordination.
+                </p>
+
+                <ul>
+                  <li>Role-based authentication & authorization system.</li>
+                  <li>Dashboard analytics for team performance tracking.</li>
+                  <li>Approval workflows for structured collaboration.</li>
+                  <li>Real-time updates for task coordination.</li>
+                </ul>
+
+                <p><strong>Tech Stack:</strong> JavaScript, Angular, GitHub</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <div class="col-md-6">
+            <div class="card project-card h-100">
+              <div class="card-body p-4">
+                <h4 class="fw-bold text-primary">
+                  QR-Based Attendance Management System
+                </h4>
+
+                <p class="text-muted">
+                  Developed and successfully deployed a QR-code-based attendance
+                  management system for a college event.
+                </p>
+
+                <ul>
+                  <li>Implemented real-time QR scanning and validation.</li>
+                  <li>Optimized for fast, accurate student check-ins.</li>
+                  <li>Designed secure attendance tracking system.</li>
+                  <li>Successfully deployed in a live college environment.</li>
+                </ul>
+
+                <p>
+                  <strong>Tech Stack:</strong> JavaScript, Web Tech, QR APIs
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h6 class="text-primary text-uppercase">Get In Touch</h6>
+          <h2 class="fw-bold">Contact Me</h2>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div class="card border-0 shadow-sm">
+              <div class="card-body p-5">
+                <form>
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="Your Name"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Your Email"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      rows="4"
+                      placeholder="Your Message"
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100">
+                    Send Message
+                  </button>
+                </form>
+
+                <div class="mt-4 pt-4 border-top text-center">
+                  <p class="text-muted mb-2">Or connect with me via:</p>
+                  <div class="d-flex justify-content-center gap-3">
+                    <a
+                      href="https://www.linkedin.com/in/dhiranesh-k-m-ba3a22291/"
+                      target="_blank"
+                      class="text-decoration-none text-dark fs-4"
+                      ><i class="fab fa-linkedin"></i
+                    ></a>
+                    <a
+                      href="https://github.com/dhiranesh"
+                      target="_blank"
+                      class="text-decoration-none text-dark fs-4"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                    <a href="#" class="text-decoration-none text-dark fs-4"
+                      ><i class="fas fa-envelope"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-center">
+      <div class="container">
+        <p class="mb-0">&copy; 2026 Dhiranesh K M. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 50) {
+          document.querySelector(".navbar").classList.add("shadow-sm");
+        } else {
+          document.querySelector(".navbar").classList.remove("shadow-sm");
+        }
+      });
+
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
